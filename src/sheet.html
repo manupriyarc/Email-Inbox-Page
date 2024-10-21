@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Inbox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-gray-300 h-screen font-sans ">
+    <div class="flex h-full ">
+        <!-- Sidebar -->
+        <div class="w-1/5 border-[1px] rounded-xl border-neutral-400  p-4 m-7 ">
+            <!-- User -->
+            <div class="mb-8 border-[1px] rounded-md flex border-neutral-400 gap-2 pl-1">
+                <svg class="w-4" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Vercel</title><path d="M24 22.525H0l12-21.05 12 21.05z" fill="currentColor"></path></svg>
+                <h1 class="text-white text-lg font-bold">Alicia Koch</h1>
+            </div>
+
+            <!-- Menu Items -->
+            <ul class="space-y-2  ">
+                <li class="flex  bg-gray-700 p-2 justify-between rounded-md items-center">
+                    <div class="flex items-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-inbox mr-2 h-4 w-4"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                        <span class="text-white">Inbox</span>
+                    </div>
+                    <span class="text-white text-sm">128</span>
+                </li>
+                
+                <li class="flex items-center p-1 justify-between">
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file mr-2 h-4 w-4"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path></svg>
+                        <span class="text-white">Drafts</span>
+                    </div>
+                    <span class="text-white text-sm">9</span>
+                </li>
+                
+                <li class="flex  items-center p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send mr-2 h-4 w-4"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg>
+                    <span class="text-white">Sent</span>
+                </li>
+                <li class="flex justify-between items-center p-1">
+                    <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-archive-x mr-2 h-4 w-4"><rect width="20" height="5" x="2" y="3" rx="1"></rect><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path><path d="m9.5 17 5-5"></path><path d="m9.5 12 5 5"></path></svg>
+                    <span class="text-white">Junk</span>
+                </div>
+                    <span class="text-white text-sm">23</span>
+                </li>
+                <li class="flex items-center p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2 mr-2 h-4 w-4"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path><line x1="10" x2="10" y1="11" y2="17"></line><line x1="14" x2="14" y1="11" y2="17"></line></svg>
+                    <span class="text-white">Trash</span>
+                </li>
+                <li class="flex items-center p-1 ">
+                    <div class="flex items-center mb-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-archive mr-2 h-4 w-4"><rect width="20" height="5" x="2" y="3" rx="1"></rect><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path><path d="M10 12h4"></path></svg>
+                    <span class="text-white ">Archive</span>
+                </div>
+                </li>
+            </ul>
+
+            <!-- Other Categories -->
+            <ul class="  space-y-2 border-t-[1px] rounded-none">
+                <li class="flex justify-between items-center mt-5">
+                    <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round mr-2 h-4 w-4"><path d="M18 21a8 8 0 0 0-16 0"></path><circle cx="10" cy="8" r="5"></circle><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"></path></svg>
+                    <span class="text-white">Social</span>
+                </div>
+                    <span class="text-white text-sm">972</span>
+                </li>
+                <li class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round mr-2 h-4 w-4"><path d="M18 21a8 8 0 0 0-16 0"></path><circle cx="10" cy="8" r="5"></circle><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"></path></svg>
+                    <span class="text-white">Updates</span>
+                </div>
+                    <span class="text-white text-sm">342</span>
+                
+                </li>
+                <li class="flex justify-between items-center">
+                    <div class="flex items-center"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-messages-square mr-2 h-4 w-4"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2z"></path><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"></path></svg>
+                    <span class="text-white">Forums</span>
+                </div>
+                    <span class="text-white text-sm">128</span>
+                </li>
+                <li class="flex justify-between items-center">
+                    <div class="flex items-center"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart mr-2 h-4 w-4"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                    <span class="text-white">Shopping</span>
+                </div>
+                    <span class="text-white text-sm">8</span>
+                </li>
+                <li class="flex justify-between items-center">
+                    <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-archive mr-2 h-4 w-4"><rect width="20" height="5" x="2" y="3" rx="1"></rect><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path><path d="M10 12h4"></path></svg>
+                    <span class="text-white">Promotions</span>
+                </div>
+                    <span class="text-white text-sm">21</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-4/5 flex flex-col ">
+            <!-- Header -->
+            
+            <div class="flex h-full ">
+                <!-- Email List -->
+                <div class="w-1/2 border-r border-l border-gray-700 p-4 overflow-y-auto  ">
+                    <!-- Search Bar -->
+                    <div class="bg-black p-4 flex justify-between items-center">
+                        <h2 class="text-white text-lg">Inbox</h2>
+                        <div class="bg-neutral-700 px-4 py-2 rounded">
+                            <button class="bg-black px-3 py-1 rounded text-white ">All mail</button>
+                            <button class="bg-neutral-700 px-3 py-1 rounded text-white">Unread</button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" placeholder="Search" class="w-full bg-black border border-gray-700 p-2 rounded text-gray-300">
+                    </div>
+
+                    <!-- Emails -->
+                    <div class="space-y-4">
+                        <!-- Email Item -->
+                        <div class="bg-black p-4 rounded border border-gray-700 hover:bg-gray-700 cursor-pointer">
+                            <h3 class="text-white">Alice Smith</h3>
+                            <p class="text-gray-400 text-sm">Re: Project Update</p>
+                            <div class="flex space-x-2 mt-2">
+                                <span class="bg-black text-xs px-2 py-1 rounded  text-gray-400">work</span>
+                                <span class="bg-black text-xs px-2 py-1 rounded text-gray-400">important</span>
+                            </div>
+                        </div>
+
+                        <!-- Email Item -->
+                        <div class="bg-black p-4 rounded hover:bg-gray-700 border border-gray-700 cursor-pointer">
+                            <h3 class="text-white">Bob Johnson</h3>
+                            <p class="text-gray-400 text-sm">Weekend Plans</p>
+                            <div class="flex space-x-2 mt-2">
+                                <span class="bg-gray-700 text-xs px-2 py-1 rounded text-gray-400">personal</span>
+                            </div>
+                        </div>
+
+                        <!-- Email Item -->
+                        <div class="bg-black p-4 rounded hover:bg-gray-700 border border-gray-700 cursor-pointer">
+                            <h3 class="text-white">Emily Davis</h3>
+                            <p class="text-gray-400 text-sm">Re: Question about Budget</p>
+                            <div class="flex space-x-2 mt-2">
+                                <span class="bg-gray-700 text-xs px-2 py-1 rounded text-gray-400">work</span>
+                                <span class="bg-gray-700 text-xs px-2 py-1 rounded text-gray-400">budget</span>
+                            </div>
+                        </div>
+
+                        <!-- Email Item -->
+                        <div class="bg-black p-4 rounded hover:bg-gray-700 border border-gray-700 cursor-pointer">
+                            <h3 class="text-white">Michael Wilson</h3>
+                            <p class="text-gray-400 text-sm">Hello!</p>
+                        </div>
+
+                        <div class="bg-black p-4 rounded hover:bg-gray-700 border border-gray-700 cursor-pointer">
+                            <h3 class="text-white">Bob Johnson</h3>
+                            <p class="text-gray-400 text-sm">Weekend Plans</p>
+                            <div class="flex space-x-2 mt-2">
+                                <span class="bg-gray-700 text-xs px-2 py-1 rounded text-gray-400">personal</span>
+                            </div>
+                        </div>
+                        <div class="bg-black p-4 rounded border border-gray-700 hover:bg-gray-700 cursor-pointer">
+                            <h3 class="text-white">Alice Smith</h3>
+                            <p class="text-gray-400 text-sm">Re: Project Update</p>
+                            <div class="flex space-x-2 mt-2">
+                                <span class="bg-black text-xs px-2 py-1 rounded  text-gray-400">work</span>
+                                <span class="bg-black text-xs px-2 py-1 rounded text-gray-400">important</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detailed Email View -->
+                <div class="w-1/2 p-4 ">
+                    <div class="flex items-center p-2 border-b border-gray-600 mb-5">
+                        <div class="flex items-center gap-2 ">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9" data-state="closed">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-archive h-4 w-4"><rect width="20" height="5" x="2" y="3" rx="1"></rect><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path><path d="M10 12h4"></path></svg>
+                                <span class="sr-only">Archive</span>
+                            </button>
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9" data-state="closed">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-archive-x h-4 w-4"><rect width="20" height="5" x="2" y="3" rx="1"></rect><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path><path d="m9.5 17 5-5"></path><path d="m9.5 12 5 5"></path>
+                                </svg>
+                                <span class="sr-only">Move to junk</span>
+                            </button>
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9" data-state="closed">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2 h-4 w-4"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path><line x1="10" x2="10" y1="11" y2="17"></line><line x1="14" x2="14" y1="11" y2="17"></line>
+                                </svg>
+                                <span class="sr-only">Move to trash</span>
+                            </button>
+                            <div data-orientation="vertical" role="none" class="shrink-0 bg-border w-[1px] mx-1 h-6"></div>
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9" data-state="closed" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:R1qbn9uukv9u6ja:">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="sr-only">Snooze</span>
+                            </button>
+                        </div>
+                        <div class="ml-auto flex items-center gap-2">
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9" data-state="closed">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-reply h-4 w-4"><polyline points="9 17 4 12 9 7"></polyline><path d="M20 18v-2a4 4 0 0 0-4-4H4"></path>
+                                </svg>
+                                <span class="sr-only">Reply</span>
+                            </button>
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9" data-state="closed">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-reply-all h-4 w-4"><polyline points="7 17 2 12 7 7"></polyline><polyline points="12 17 7 12 12 7"></polyline><path d="M22 18v-2a4 4 0 0 0-4-4H7"></path></svg><span class="sr-only">Reply all</span>
+                                </button>
+                                <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9" data-state="closed">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-forward h-4 w-4"><polyline points="15 17 20 12 15 7"></polyline><path d="M4 18v-2a4 4 0 0 1 4-4h12"></path>
+                                    </svg>
+                                    <span class="sr-only">Forward</span>
+                                </button>
+                            </div>
+                            <div data-orientation="vertical" role="none" class="shrink-0 bg-border w-[1px] mx-2 h-6">
+                            </div>
+                            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9" type="button" id="radix-:R13n9uukv9u6ja:" aria-haspopup="menu" aria-expanded="false" data-state="closed">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical h-4 w-4"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>
+                                </svg>
+                                <span class="sr-only">More</span>
+                            </button>
+                        </div>
+ 
+                    <!-- Email Details -->
+                    <div class=" flex gap-5 border-b border-gray-700">
+                    <span class="relative flex h-10 w-10  shrink-0 overflow-hidden rounded-full">
+                        <span class="flex h-full w-full items-center bg-gray-600 justify-center rounded-full bg-muted">SW</span>
+                    </span>
+                    <div class="pb-4">
+                        <h2 class="text-white text-xl">William Smith</h2>
+                        <p class="text-gray-400">Meeting Tomorrow</p>
+                        <p class="text-xs text-gray-500">Oct 22, 2023, 9:00:00 AM</p>
+                    </div>
+                </div>
+
+                    <!-- Email Body -->
+                    <div class="mt-4">
+                        <p class="text-gray-300">Hi, let's have a meeting tomorrow to discuss the project. I've been reviewing the project
+                            details and have some ideas I'd like to share. It's crucial that we align on our next
+                            steps to ensure the project's success.</p>
+                        <p class="mt-4 text-gray-300">Please come prepared with any questions or insights you may have. Looking forward to our meeting!</p>
+                        <p class="mt-4 text-gray-300">Best regards, William</p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
